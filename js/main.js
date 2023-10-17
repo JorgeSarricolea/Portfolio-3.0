@@ -1,10 +1,7 @@
-// nav.js
-document.write(`
-  <nav>
-    <ul>
-      <li><a href="pagina1.html">Página 1</a></li>
-      <li><a href="pagina2.html">Página 2</a></li>
-      <li><a href="pagina3.html">Página 3</a></li>
-    </ul>
-  </nav>
-`);
+var typingEffect = new Typed(".multiText", {
+  strings: ["Fullstack Developer", "UX/UI Designer", "Graphic Designer"],
+  loop: true,
+  typeSpeed: 100,
+  backSpeed: 80,
+  backDelay: 1500,
+});

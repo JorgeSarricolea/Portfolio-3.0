@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;500;800&family=Montserrat:wght@100;400;600&family=Poppins:wght@100;400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -14,27 +16,43 @@
 
 body {
   background-color: var(--black);
+  font-family: 'Catamaran', sans-serif;
+  margin-top: 160px;
+  color: var(--white);
 }
 
-/* styles.css */
+/* Desktop Navbar */
+
 .menu {
+  display: flex;
+  flex-direction: row;
+  border-radius: 100px;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: #333;
-}
-
-.menu li {
-  display: inline;
-  margin-right: 10px;
+  padding: 20px 40px;
+  margin: 20px auto;
+  background-color: var(--gray), 0.1;
+  backdrop-filter: blur(10px);
+  width: fit-content;
+  gap: 40px;
 }
 
 .menu-link {
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 .menu-link:hover {
-  text-decoration: underline;
-  color: yellow;
+  color: var(--lightPurple);
 }
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+/* Main Content */
