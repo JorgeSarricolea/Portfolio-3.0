@@ -1,0 +1,66 @@
+:root {
+  --black: #000;
+  --gray: #212121;
+  --purple: #72507A;
+  --lightPurple: #EAA0FD;
+  --white: #fff;
+}
+
+/* Main Content */
+
+main {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--gray);
+  border-radius: 25px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 40px 0 40px;
+}
+
+.main-text {
+  width: 50%;
+}
+
+main h1 {
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 60px;
+  height: 40%;
+}
+
+main p {
+  font-size: 24px;
+}
+
+main span {
+  color: var(--lightPurple);
+  font-weight: bold;
+}
+
+main button {
+  background-color: var(--lightPurple);
+  color: var(--gray);
+  border: none;
+  margin-top: 80px;
+  border-radius: 15px;
+  padding: 10px 60px;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+
+main button:hover {
+  background-color: var(--purple);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main .hero-img {
+  display: flex;
+}
+
+.hero-img img {
+  width: 100%;
+}
