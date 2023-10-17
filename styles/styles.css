@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000;
+  --gray: #212121;
+  --purple: #72507A;
+  --lightPurple: #EAA0FD;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--black);
+}
+
+/* styles.css */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+  color: yellow;
+}
