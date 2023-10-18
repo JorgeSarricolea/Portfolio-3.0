@@ -16,6 +16,7 @@ main {
   width: 80%;
   margin: 0 auto;
   padding: 40px 40px 0 40px;
+  position: relative;
 }
 
 .main-text {
@@ -63,4 +64,69 @@ main .hero-img {
 
 .hero-img img {
   width: 100%;
+}
+
+/* Circle Icons */
+
+.circle {
+  transition: opacity 0.2s ease-in-out;
+}
+
+#upper-icon {
+  width: 120px;
+  height: 120px;
+  background-color: var(--black);
+  border-radius: 50%;
+  position: absolute;
+  top: 58%;
+  left: 55%;
+  transform: translate(-40%, -50%);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: bounce 2.3s ease-in-out infinite;
+  padding: 10px;
+}
+
+#middle-icon {
+  width: 80px;
+  height: 80px;
+  background-color: var(--black);
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 48%;
+  transform: translate(-40%, -50%);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: bounce 2.1s ease-in-out infinite;
+  padding: 10px;
+}
+
+#bottom-icon {
+  width: 100px;
+  height: 100px;
+  background-color: var(--black);
+  border-radius: 50%;
+  position: absolute;
+  top: 18%;
+  left: 55%;
+  transform: translate(-40%, -50%);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: bounce 2.4s ease-in-out infinite;
+  padding: 10px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
