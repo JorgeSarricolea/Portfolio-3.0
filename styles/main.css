@@ -59,6 +59,7 @@ body {
 
 .menu-container {
   display: none;
+  position: relative;
   justify-content: end;
   padding: 20px;
 }
@@ -92,6 +93,55 @@ body {
 .activeline3-bars-menu {
   transform: rotate(-45deg) translate(-2px, 2px);
 }
+
+.active-menu-container {
+  transition: 0.3s ease-in-out;
+  background-color: rgba(33, 33, 33, 0.9);
+}
+
+/* Mobile Navbar Options */
+
+#navbar {
+  display: none;
+  opacity: 0;
+  background-color: rgba(33, 33, 33, 0.9);
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  z-index: -2;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#navbar.activenavbar {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 40px;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+#navbar ul li {
+  display: flex;
+  margin: 10px 0;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 48px;
+}
+
+#navbar ul li a:hover {
+  color: var(--lightPurple);
+}
+
 
 /* Buttons */
 
@@ -127,5 +177,9 @@ body {
 
   .menu-container {
     display: flex;
+  }
+
+  #navbar {
+    display: block;
   }
 }
