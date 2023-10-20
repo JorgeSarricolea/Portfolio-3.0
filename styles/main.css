@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;500;800&family=Montserrat:wght@100;400;600&family=Poppins:wght@100;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;500;800&display=swap');
 
 * {
   margin: 0;
@@ -7,11 +7,19 @@
 }
 
 :root {
+  /* Color Palette */
   --black: #000;
   --gray: #212121;
   --purple: #72507A;
   --lightPurple: #EAA0FD;
   --white: #fff;
+
+  /* Font Sizes */
+  --mainTitles: 68px;
+  --mainTitleMobile: 56px;
+  --paragraph: 24px;
+  --paragraphMobile: larger;
+  --buttonFontSize: 18px;
 }
 
 body {
@@ -135,20 +143,19 @@ body {
 #navbar ul li a {
   text-decoration: none;
   color: var(--white);
-  font-size: 48px;
+  font-size: var(--mainTitleMobile);
 }
 
 #navbar ul li a:hover {
   color: var(--lightPurple);
 }
 
-
 /* Buttons */
 
 #primary-btn {
   display: flex;
   background-color: var(--lightPurple);
-  font-size: 18px;
+  font-size: var(--buttonFontSize);
   color: var(--gray);
   border: none;
   border-radius: 15px;
