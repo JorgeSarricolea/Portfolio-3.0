@@ -46,4 +46,3 @@ function handleScroll() {
 
 // Add a listener for the scroll event
 window.addEventListener("scroll", handleScroll);
-

@@ -93,9 +93,30 @@ body {
   transform: rotate(-45deg) translate(-2px, 2px);
 }
 
+/* Buttons */
+
+#primary-btn {
+  display: flex;
+  background-color: var(--lightPurple);
+  font-size: 18px;
+  color: var(--gray);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 60px;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+
+#primary-btn:hover {
+  background-color: var(--purple);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+}
+
 /* Media Querys */
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   body {
     margin-top: 0;
   }
