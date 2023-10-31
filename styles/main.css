@@ -17,8 +17,11 @@
   /* Font Sizes */
   --mainTitles: 68px;
   --mainTitleMobile: 56px;
+  --sectionTitles: 32px;
   --paragraph: 24px;
   --paragraphMobile: larger;
+  --tags: 12px;
+  --icons: 28px;
   --buttonFontSize: 18px;
 }
 
