@@ -38,8 +38,8 @@ body {
   list-style: none;
   padding: 20px 40px;
   margin: 20px auto;
-  background-color: var(--gray), 0.1;
-  backdrop-filter: blur(10px);
+  background-color: rgba(33, 33, 33, 0.7);
+  backdrop-filter: blur(5px);
   width: fit-content;
   gap: 40px;
 }
