@@ -13,11 +13,11 @@ document.write(`
 document.write(`
 <nav id="navbar" class="navbar">
   <ul class="items-mobile">
-    <li ><a class="mobile-link" href="index.html" target="_blank">Home</a></li>
-    <li ><a class="mobile-link" href="#" target="_blank">Portfolio</a></li>
-    <li ><a class="mobile-link" href="#" target="_blank">About</a></li>
-    <li ><a class="mobile-link" href="#" target="_blank">Resume</a></li>
-    <li ><a class="mobile-link" href="#" target="_blank">Contact</a></li>
+    <li ><a class="mobile-link" href="index.html">Home</a></li>
+    <li ><a class="mobile-link" href="portfolio.html">Portfolio</a></li>
+    <li ><a class="mobile-link" href="aboutme.html">About</a></li>
+    <li ><a class="mobile-link" href="resume.html">Resume</a></li>
+    <li ><a class="mobile-link" href="contact.html">Contact</a></li>
   </ul>
 </nav>
 `);
@@ -38,6 +38,12 @@ document.addEventListener("DOMContentLoaded", function () {
     line2BarsMenu.classList.toggle("activeline2-bars-menu");
     line3BarsMenu.classList.toggle("activeline3-bars-menu");
     navbar.classList.toggle("activenavbar");
+
+    if (document.body.classList.contains("scroll-lock")) {
+      document.body.classList.remove("scroll-lock");
+    } else {
+      document.body.classList.add("scroll-lock");
+    }
   });
 
   // Gets the name of the current page (without the path) and the path of the current page

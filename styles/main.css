@@ -16,7 +16,7 @@
 
   /* Font Sizes */
   --mainTitles: 68px;
-  --mainTitleMobile: 56px;
+  --mainTitleMobile: 48px;
   --sectionTitles: 32px;
   --paragraph: 24px;
   --paragraphMobile: larger;
@@ -30,6 +30,10 @@ body {
   font-family: 'Catamaran', sans-serif;
   margin-top: 110px;
   color: var(--white);
+}
+
+body.scroll-lock {
+  overflow: hidden;
 }
 
 /* Desktop Navbar */
