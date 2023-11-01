@@ -1,0 +1,53 @@
+/* Main Content */
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto 100px;
+  gap: 40px;
+}
+
+#aboutTitle {
+  font-size: var(--sectionTitles);
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--lightPurple);
+  animation: fontsFadeIn .8s forwards;
+}
+
+/* Hero */
+
+#hero-container {
+  background-color: var(--gray);
+  border-radius: 25px;
+  width: 50%;
+}
+
+#hero-container img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+#details-containers {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 20px;
+}
+
+section h1 {
+  color: var(--lightPurple);
+  text-transform: uppercase;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+section {
+  background-color: var(--gray);
+  border-radius: 25px;
+  padding: 20px;
+}

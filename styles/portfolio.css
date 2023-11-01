@@ -47,7 +47,6 @@ main {
 }
 
 .header-project h1 {
-  font-size: var(--sectionTitles);
   color: var(--lightPurple);
   text-transform: uppercase;
 }
@@ -115,28 +114,6 @@ main {
 
 #moreProjects a:hover {
   color: var(--lightPurple);
-}
-
-/* Slides Sections Animations */
-
-.slide-left-right,
-.slide-right-left {
-  opacity: 0;
-  transition: transform 0.5s, opacity 0.5s;
-}
-
-.slide-left-right {
-  transform: translateX(-50px);
-}
-
-.slide-right-left {
-  transform: translateX(50px);
-}
-
-.slide-right-left.active,
-.slide-left-right.active {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 /* Media Querys */

@@ -138,6 +138,28 @@ body.scroll-lock {
   }
 }
 
+/* Slides Sections Animations */
+
+.slide-left-right,
+.slide-right-left {
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.slide-left-right {
+  transform: translateX(-50px);
+}
+
+.slide-right-left {
+  transform: translateX(50px);
+}
+
+.slide-right-left.active,
+.slide-left-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 /* Navbar */
 @keyframes fadeInNav {
   from {
@@ -221,6 +243,7 @@ body.scroll-lock {
   gap: 5px;
   margin-top: 20px;
   max-width: none;
+  min-height: fit-content;
 }
 
 .tag {
@@ -237,8 +260,10 @@ body.scroll-lock {
 }
 
 .tag-icon {
+  display: flex;
   background-color: var(--black);
   border-radius: 5px;
+  align-items: center;
 }
 
 .tags-container img {
