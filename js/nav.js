@@ -58,7 +58,6 @@ function handleScroll() {
   prevScrollPos = currentScrollPos;
 }
 
-
 // To animate fade in the navbar container
 document.addEventListener("DOMContentLoaded", function () {
   navbarContainer.classList.add("visible");

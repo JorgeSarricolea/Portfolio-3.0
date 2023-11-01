@@ -1,10 +1,14 @@
 /* Main Content */
 
+body {
+  overflow-x: hidden;
+}
+
 main {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   position: relative;
   gap: 120px;
 }
@@ -77,12 +81,10 @@ main {
 
 .right-container {
   right: 0;
-  width: 40%;
 }
 
 .left-container {
   left: 0;
-  width: 40%;
 }
 
 /* Tags */
@@ -134,6 +136,20 @@ main {
   color: var(--lightPurple);
 }
 
+#moreProjects {
+  display: flex;
+  margin: 0 auto;
+}
+
+#moreProjects a {
+  width: fit-content;
+  color: var(--white);
+}
+
+#moreProjects a:hover {
+  color: var(--lightPurple);
+}
+
 /* Slides Sections Animations */
 
 .slide-left-right,
@@ -160,7 +176,10 @@ main {
 
 @media (max-width: 800px) {
   main {
-    gap: 350px
+    margin-top: 0;
+    margin-bottom: 40px;
+    width: 90%;
+    gap: 20px;
   }
 
   .image-container {
@@ -170,12 +189,13 @@ main {
   .left-position img,
   .right-position img {
     width: 100%;
-    border-radius: 25px;
+    border-radius: 25px 25px 0 0;
   }
 
   .left-container,
   .right-container {
-    top: 140px;
+    position: relative;
+    top: -20px;
     width: 100%;
   }
 }
