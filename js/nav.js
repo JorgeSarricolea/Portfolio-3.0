@@ -44,5 +44,25 @@ function handleScroll() {
   prevScrollPos = currentScrollPos;
 }
 
+// Function to handle the scroll event
+function handleScroll() {
+  const currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos) {
+    // The user is scrolling up, show the navigation bar
+    navbarContainer.classList.add("visible"); // Aplica la clase 'visible' para mostrar con animación
+  } else {
+    // The user is scrolling down, hide the navigation bar
+    navbarContainer.classList.remove("visible"); // Quita la clase 'visible' para ocultar con animación
+  }
+  prevScrollPos = currentScrollPos;
+}
+
+
+// To animate fade in the navbar container
+document.addEventListener("DOMContentLoaded", function () {
+  navbarContainer.classList.add("visible");
+});
+
 // Add a listener for the scroll event
 window.addEventListener("scroll", handleScroll);

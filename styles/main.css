@@ -68,6 +68,17 @@ body.scroll-lock {
   background-color: transparent;
   z-index: 100;
   transition: top 0.3s;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.navbar-container.active {
+  display: block;
+  transform: scaleY(1);
+}
+
+.navbar-container.visible {
+  opacity: 1;
 }
 
 /* Mobile Navbar */
@@ -112,6 +123,30 @@ body.scroll-lock {
 .active-menu-container {
   transition: 0.3s ease-in-out;
   background-color: rgba(33, 33, 33, 0.9);
+}
+
+/* Animations */
+
+/* Fonts */
+@keyframes fontsFadeIn {
+  from {
+    font-size: 0;
+  }
+
+  to {
+    font-size: var(--sectionTitles);
+  }
+}
+
+/* Navbar */
+@keyframes fadeInNav {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Mobile Navbar Options */

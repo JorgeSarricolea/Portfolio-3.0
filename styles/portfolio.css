@@ -9,6 +9,15 @@ main {
   gap: 120px;
 }
 
+#portfolioTitle {
+  font-size: var(--sectionTitles);
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--lightPurple);
+  animation: fontsFadeIn .8s forwards;
+}
+
 /* Sections */
 
 .image-container {
