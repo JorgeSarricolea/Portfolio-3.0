@@ -16,7 +16,7 @@ main {
 }
 
 .main-container h1 {
-  font-size: var(--mainTitles);
+  font-size: 68px;
   font-weight: 500;
   line-height: 1;
   margin-top: 60px;
@@ -24,7 +24,7 @@ main {
 }
 
 .main-container p {
-  font-size: var(--paragraph);
+  font-size: 24px;
 }
 
 .main-container span {
@@ -157,12 +157,12 @@ main {
   }
 
   .main-container h1 {
-    font-size: var(--mainTitleMobile);
+    font-size: 48px;
     min-height: 150px;
   }
 
   .main-container p {
-    font-size: var(--paragraphMobile);
+    font-size: larger
   }
 
   .main-container button {

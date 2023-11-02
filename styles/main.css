@@ -15,14 +15,8 @@
   --white: #fff;
 
   /* Font Sizes */
-  --mainTitles: 68px;
-  --mainTitleMobile: 48px;
-  --sectionTitles: 32px;
-  --paragraph: 24px;
-  --paragraphMobile: larger;
   --tags: 12px;
   --icons: 28px;
-  --buttonFontSize: 18px;
 }
 
 body {
@@ -40,8 +34,7 @@ p {
   line-height: 1.5;
 }
 
-#Title {
-  font-size: var(--sectionTitles);
+#mainTitle {
   text-align: center;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -147,7 +140,7 @@ p {
   }
 
   to {
-    font-size: var(--sectionTitles);
+    font-size: 32px;
   }
 }
 
@@ -220,7 +213,7 @@ p {
 #navbar ul li a {
   text-decoration: none;
   color: var(--white);
-  font-size: var(--mainTitleMobile);
+  font-size: 48px;
 }
 
 #navbar ul li a:hover {
@@ -232,13 +225,14 @@ p {
 #primary-btn {
   display: flex;
   background-color: var(--lightPurple);
-  font-size: var(--buttonFontSize);
-  color: var(--gray);
+  font-size: var(--smallFont);
+  text-decoration: none;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 10px 60px;
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
+  color: var(--gray);
 }
 
 #primary-btn:hover {
@@ -246,6 +240,10 @@ p {
   color: var(--white);
   font-weight: bold;
   cursor: pointer;
+}
+
+.cv-btn {
+  text-decoration: none;
 }
 
 /* Tags */
@@ -257,10 +255,6 @@ p {
   margin-top: 10px;
   max-width: none;
   min-height: fit-content;
-}
-
-.tag h1 {
-  font-size: var(--paragraph);
 }
 
 .tag {

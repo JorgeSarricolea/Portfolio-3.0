@@ -76,7 +76,24 @@ main {
 
 .left-container {
   left: 0;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(10px -10px 10px rgba(0, 0, 0, 0.8));
+}
+
+.job-title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.job-title h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: -5px;
+}
+
+.job-title span {
+  font-size: 16px;
+  text-transform: capitalize;
 }
 
 /* Refs */
@@ -95,17 +112,20 @@ main {
   color: var(--lightPurple);
 }
 
-#moreProjects {
+#moreProjects,
+#cv-container {
   display: flex;
   margin: 0 auto;
 }
 
-#moreProjects a {
+#moreProjects a,
+#cv-container a {
   width: fit-content;
   color: var(--white);
 }
 
-#moreProjects a:hover {
+#moreProjects a,
+#cv-container a:hover {
   color: var(--lightPurple);
 }
 
