@@ -13,15 +13,6 @@ main {
   gap: 120px;
 }
 
-#portfolioTitle {
-  font-size: var(--sectionTitles);
-  text-align: center;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  color: var(--lightPurple);
-  animation: fontsFadeIn .8s forwards;
-}
-
 /* Sections */
 
 .image-container {
@@ -80,10 +71,12 @@ main {
 
 .right-container {
   right: 0;
+  filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.8));
 }
 
 .left-container {
   left: 0;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
 }
 
 /* Refs */
@@ -141,5 +134,6 @@ main {
     position: relative;
     top: -20px;
     width: 100%;
+    filter: drop-shadow(0px -10px 15px rgba(0, 0, 0, 0.8));
   }
 }
