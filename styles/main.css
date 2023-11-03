@@ -233,6 +233,7 @@ p {
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
   color: var(--gray);
+  justify-content: center;
 }
 
 #primary-btn:hover {
