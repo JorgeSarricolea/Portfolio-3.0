@@ -14,7 +14,7 @@ document.write(`
 <nav id="navbar" class="navbar">
   <ul class="items-mobile">
     <li ><a class="mobile-link" href="index.html">Home</a></li>
-    <li ><a class="mobile-link" href="portfolio.html">Portfolio</a></li>
+    <li ><a class="mobile-link" href="portfolio">Portfolio</a></li>
     <li ><a class="mobile-link" href="aboutme.html">About</a></li>
     <li ><a class="mobile-link" href="resume.html">Resume</a></li>
     <li ><a class="mobile-link" href="contact.html">Contact</a></li>
