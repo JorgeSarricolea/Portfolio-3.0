@@ -13,11 +13,11 @@ document.write(`
 document.write(`
 <nav id="navbar" class="navbar">
   <ul class="items-mobile">
-    <li ><a class="mobile-link" href="index.html">Home</a></li>
+    <li ><a class="mobile-link" href="index">Home</a></li>
     <li ><a class="mobile-link" href="portfolio">Portfolio</a></li>
-    <li ><a class="mobile-link" href="aboutme.html">About</a></li>
-    <li ><a class="mobile-link" href="resume.html">Resume</a></li>
-    <li ><a class="mobile-link" href="contact.html">Contact</a></li>
+    <li ><a class="mobile-link" href="aboutme">About</a></li>
+    <li ><a class="mobile-link" href="resume">Resume</a></li>
+    <li ><a class="mobile-link" href="contact">Contact</a></li>
   </ul>
 </nav>
 `);
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Gets the name of the current page (without the path) and the path of the current page
   const linkMobile = document.querySelectorAll(".mobile-link");
-  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  const currentPage = window.location.pathname.split("/").pop() || "index";
 
   // Loop through all links in the menu and apply styles to the corresponding link
   linkMobile.forEach((link) => {
