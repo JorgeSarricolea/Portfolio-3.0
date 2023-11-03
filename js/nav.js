@@ -3,7 +3,7 @@ document.write(`
 <div class="navbar-container">
   <nav>
     <ul class="menu">
-      <li><a href="http://127.0.0.1:5500" class="menu-link">Home</a></li>
+      <li><a href="index.html" class="menu-link">Home</a></li>
       <li><a href="portfolio.html" class="menu-link">Portfolio</a></li>
       <li><a href="aboutme.html" class="menu-link">About</a></li>
       <li><a href="resume.html" class="menu-link">Resume</a></li>
@@ -14,7 +14,7 @@ document.write(`
 `);
 
 // Gets the name of the current page (without the path) and the path of the current page
-const currentPage = window.location.pathname.split("/").pop();
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
 const menuLinks = document.querySelectorAll(".menu-link");
 
 // Loop through all links in the menu and apply styles to the corresponding link
