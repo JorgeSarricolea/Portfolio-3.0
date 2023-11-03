@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Gets the name of the current page (without the path) and the path of the current page
   const linkMobile = document.querySelectorAll(".mobile-link");
-  const currentPage = window.location.pathname.split("/").pop();
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
   // Loop through all links in the menu and apply styles to the corresponding link
   linkMobile.forEach((link) => {

@@ -37,7 +37,9 @@ main {
 }
 
 .main-container a {
+  display: block;
   text-decoration: none;
+  width: fit-content;
 }
 
 .hero-container {
@@ -169,8 +171,8 @@ main {
     font-size: larger
   }
 
-  .main-container button {
-    margin: 80px auto;
+  .main-container a {
+    margin: 40px auto;
   }
 
   .triangle {
