@@ -133,16 +133,16 @@ main {
 /* Media Querys */
 
 @media (max-width: 800px) {
-  body {
-    max-height: fit-content;
-  }
-
   main {
     background-color: transparent;
     flex-direction: column;
     width: 100%;
     padding: 0;
     border-radius: 0;
+  }
+
+  #hero {
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
   }
 
   .hero-container img {
@@ -179,7 +179,7 @@ main {
     height: 0;
     border-left: 0 solid transparent;
     border-right: 370px solid transparent;
-    border-bottom: 380px solid var(--lightPurple);
+    border-bottom: 390px solid var(--lightPurple);
     position: absolute;
     top: 0;
     left: 0;
