@@ -66,6 +66,7 @@ main {
 
 .circle {
   transition: opacity 0.3s ease-in-out;
+  z-index: 999;
 }
 
 #upper-icon {
@@ -132,12 +133,15 @@ main {
 /* Media Querys */
 
 @media (max-width: 800px) {
+  body {
+    max-height: fit-content;
+  }
+
   main {
     background-color: transparent;
     flex-direction: column;
     width: 100%;
     padding: 0;
-    min-height: 550px;
     border-radius: 0;
   }
 
@@ -171,6 +175,15 @@ main {
 
   .triangle {
     display: block;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 370px solid transparent;
+    border-bottom: 380px solid var(--lightPurple);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 
   /* Circle Icons */

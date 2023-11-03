@@ -1,9 +1,5 @@
 /* Main Content */
 
-body {
-  overflow-x: hidden;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -11,6 +7,14 @@ main {
   margin: 0 auto 100px;
   position: relative;
   gap: 120px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body.scroll-lock {
+  overflow: hidden;
 }
 
 /* Sections */

@@ -28,3 +28,5 @@ sectionsLeft.forEach((section) => {
 sectionsRright.forEach((section) => {
   observer.observe(section);
 });
+
+document.documentElement.style.overflowX = 'hidden';

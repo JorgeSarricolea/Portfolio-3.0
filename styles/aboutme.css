@@ -8,6 +8,10 @@ main {
   gap: 20px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Hero */
 
 #hero-container {

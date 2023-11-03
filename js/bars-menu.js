@@ -41,8 +41,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (document.body.classList.contains("scroll-lock")) {
       document.body.classList.remove("scroll-lock");
+      document.documentElement.style.overflowY = 'auto'; // Habilitar el scroll vertical
     } else {
       document.body.classList.add("scroll-lock");
+      document.documentElement.style.overflowY = 'hidden'; // Deshabilitar el scroll vertical
     }
   });
 
