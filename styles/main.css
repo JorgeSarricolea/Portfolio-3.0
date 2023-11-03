@@ -76,7 +76,6 @@ p {
   transition: top 0.3s;
   opacity: 0;
   transition: opacity .5s ease;
-  border: 5px solid #EAA0FD;
 }
 
 .navbar-container.active {
@@ -129,7 +128,7 @@ p {
 
 .active-menu-container {
   transition: 0.3s ease-in-out;
-  background-color: rgba(33, 33, 33, 0.9);
+  background-color: rgba(33, 33, 33, .95);
 }
 
 /* Animations */
@@ -183,7 +182,7 @@ p {
 #navbar {
   display: none;
   opacity: 0;
-  background-color: rgba(33, 33, 33, 0.9);
+  background-color: rgba(33, 33, 33, 0.95);
   width: 100%;
   position: absolute;
   z-index: -2;
