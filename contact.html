@@ -1,48 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact me!</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact me!</title>
 
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/contact.css">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
 
-  <!-- Navbar and menu mobile -->
-  <script src="js/nav.js"></script>
-  <script src="js/bars-menu.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/circularIcon.png" type="image/png" />
 
-  <!-- Meta Tags -->
-  <link rel="canonical" href="contact">
-  <meta property="og:title" content="Do you need a website? Contact me!">
-  <meta property="og:description" content="Do you need a website? Do you want to know more about me? It's time to contact me.">
-  <meta property="og:type" content="website">
-</head>
-<body>
-  <h1 id="mainTitle">contact me!</h1>
-  <main>
-    <form id="emailForm" method="post">
-      <label for="name" class="custom-label" data-placeholder="Name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Name" required class="custom-input"><br>
-      <span id="nameError" class="error-message"></span>
+    <!-- Navbar and menu mobile -->
+    <script src="js/nav.js"></script>
+    <script src="js/bars-menu.js"></script>
 
-      <label for="email" class="custom-label" data-placeholder="Email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Email" required class="custom-input"><br>
-      <span id="emailError" class="error-message"></span>
+    <!-- Meta Tags -->
+    <link rel="canonical" href="contact" />
+    <meta property="og:title" content="Do you need a website? Contact me!" />
+    <meta
+      property="og:description"
+      content="Do you need a website? Do you want to know more about me? It's time to contact me."
+    />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <h1 id="mainTitle">contact me!</h1>
+    <main>
+      <form id="emailForm" method="post">
+        <label for="name" class="custom-label" data-placeholder="Name"
+          >Name:</label
+        >
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Name"
+          required
+          class="custom-input"
+        /><br />
+        <span id="nameError" class="error-message"></span>
 
-      <label for="subject" class="custom-label" data-placeholder="Subject">Subject:</label>
-      <input type="text" id="subject" name="subject" placeholder="Subject" required class="custom-input"><br>
-      <span id="subjectError" class="error-message"></span>
+        <label for="email" class="custom-label" data-placeholder="Email"
+          >Email:</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+          class="custom-input"
+        /><br />
+        <span id="emailError" class="error-message"></span>
 
-      <label for="message" class="custom-label" data-placeholder="Message">Message:</label>
-      <textarea id="message" name="message" rows="2" placeholder="Message" required class="custom-input"></textarea><br>
-      <span id="messageError" class="error-message"></span><br>
+        <label for="subject" class="custom-label" data-placeholder="Subject"
+          >Subject:</label
+        >
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Subject"
+          required
+          class="custom-input"
+        /><br />
+        <span id="subjectError" class="error-message"></span>
 
-      <button id="primary-btn" type="button" onclick="validateAndOpenEmailClient()">send email</button>
-    </form>
-  </main>
-  <!-- Main JS File -->
-  <script src="js/contact.js"></script>
-</body>
+        <label for="message" class="custom-label" data-placeholder="Message"
+          >Message:</label
+        >
+        <textarea
+          id="message"
+          name="message"
+          rows="2"
+          placeholder="Message"
+          required
+          class="custom-input"
+        ></textarea
+        ><br />
+        <span id="messageError" class="error-message"></span><br />
+
+        <button
+          id="primary-btn"
+          type="button"
+          onclick="validateAndOpenEmailClient()"
+        >
+          send email
+        </button>
+      </form>
+    </main>
+    <!-- Main JS File -->
+    <script src="js/contact.js"></script>
+  </body>
 </html>
